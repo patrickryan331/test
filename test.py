@@ -69,3 +69,44 @@ print(person)
 # get the values
 print(person["lastName"])
 
+
+
+
+
+
+
+####################### class 2 ###########################
+
+
+
+# create a  calculator using functions
+
+def printMenu():
+    print("[1]sum")
+    print("[2]subtract")
+    print("[3]multiplication")
+    print("[4]division")
+
+
+    #plain instructions
+printMenu()
+opt = input("Select the option: ")
+
+number1=float(input("Please provide the first number: "))
+number2=float(input("Please provide the second number: "))
+
+if opt == "1":
+    total = number1 + number2
+    print("The total is: " + str(total))
+elif opt == "2":
+    total = number1 - number2
+    print("The total is: " + str(total))
+elif opt == "3":
+    total = number1 * number2
+    print("The total is: " + str(total))
+elif opt == "4":
+    if number2 ==  0:
+        print("Dividing by zero is not permitted")
+    else:
+        total = number1 / number2
+        print("The total is: " + str(total))
